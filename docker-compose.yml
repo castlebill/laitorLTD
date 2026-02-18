@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  laitor:
+    build: .
+    container_name: laitor-investment
+    ports:
+      - "80:80"
+      - "8080:80"
+    restart: unless-stopped
